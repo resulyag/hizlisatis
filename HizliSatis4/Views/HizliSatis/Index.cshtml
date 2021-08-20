@@ -1,0 +1,742 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6  pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+                <div data-aos="zoom-out">
+                    <h1>Hızlı Satışta ihtiyacınız olan her şey Bilsoft‘ta mevcut!</h1>
+                    <h2>Stok Takip Programı olarak da kullanabileceğiniz Hızlı Satış Programı, Bilsoft Ön Muhasebe'ye tam entegre! </h2>
+                    <div class="text-center text-lg-left">
+                        @*<a href="https://www.bilsoft.com/uye_giris.aspx?ReturnUrl=%2fodeme.aspx%3ftutar%3d1600%26aciklama%3dMarket%2520Ma%25F0aza%2520Perakende%2520Program%25FD" class="btn-get-started scrollto">Satın Al</a>*@
+                        <a href="Index#pricing" class="btn-get-started scrollto">Satın Al</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-lg-6 order-1 order-lg-2  " style="margin-top: 5%;  right: 5%;"
+                 } data-aos="zoom-out" data-aos-delay="300">
+
+                @*<img src="~/Content/assets/img/uçan marktein elli ekranı copy.png" class="img-fluid animated" style="max-width: 120%" alt="">*@
+                <img src="~/Content/assets/img/hızlımarket dönek.png" class="img-fluid animated" style="max-width:130%" alt="">
+
+            </div>
+        </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+            <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+        </g>
+        <g class="wave2">
+            <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+        </g>
+        <g class="wave3">
+            <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+        </g>
+    </svg>
+
+</section><!-- End Hero -->
+
+<main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="hizlisatis" class="hizlisatis">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
+                    <h3>Şimdi Hızlı Satış'a Geçmenin Tam Zamanı!</h3>
+                    <p>
+                        Stok Takip Programı olarak da kullanabileceğiniz Bilsoft Hızlı Satış Programı, Ön Muhasebe ile entegre çalışmaktadır. Bu çalışma sisteminde tüm stok, kasa giriş-çıkışlarınızı otomatik olarak takip edin ve kayıpları azaltın.
+                        Basit arayüz ile sizlere hız kazandıracak olan Hızlı Satış Programı ile iş sürecinizi kolaylaştırın.
+                    </p>
+
+                </div>
+                <div class="col-xl-6 col-lg-6 d-flex justify-content-center align-items-stretch" data-aos="fade-right">
+                    <img src="~/Content/assets/img/uçan marktein elli ekranı copy.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </section><!-- End About Section -->
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <p>HIZLI SATIŞ PANELİ ÖZELLİKLERİ</p>
+            </div>
+
+            <div class="row" data-aos="fade-left">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                            <img width="40" src="~/Content/assets/img/icon/tam-entegre.svg" id="panel" />
+                            <h3><a href="/HizliSatis/Ozellikler">Ön Muhasebe Programıyla Tam Entegrasyon Çalışma</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                            <img width="40" src="~/Content/assets/img/icon/nakit-kart-tek-tus.svg" id="panel" />
+                            <h3><a href="/HizliSatis/Ozellikler">Tek Butonla Nakit Satış</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                            <img width="40" src="~/Content/assets/img/icon/nakit-kart-tek-tus.svg" id="panel" />
+                            <h3><a href="/HizliSatis/Ozellikler">Tek Butonla Kredi Kartı Satışı</a></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                            <img width="40" src="~/Content/assets/img/icon/coklu-odeme.svg" id="panel" />
+                            <h3><a href="/HizliSatis/Ozellikler">Çoklu Ödeme</a></h3>
+                        </div>
+                    </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/kolay-para-girisi.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Kolay Para Girişi</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/para-ustu-takibi.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Para Üstü Takibi</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/para-cekmece-baglanti.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Para Çekmecesi Bağlantısı</a></h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/musteri-bekletme.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Müşteri Bekletme</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/musteri-gostergesi.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Müşteri Göstergesi(PosClass)</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/yazar-kasa-pos.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Yazarkasa Pos</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/barkod-okuyucu-entegre.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Barkod Okuyucu Entegre</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/marketlerde-barkod-ile-hizli-satis.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Marketlerde Barkod ile Hızlı Satış</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/fis-fatura-yazdirma.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Fiş ve Fatura Yazdırabilme</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/ag-uzerinden-calisma.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Ağ üzerinden Çalışma</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/dokunmatik-hizli-urun-ekleme-5.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Dokunmatik Hızlı Ürün Ekleme</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+                        <img width="40" src="~/Content/assets/img/icon/dokunmatik-ekran-ozelligi.svg" id="panel" />
+                        <h3><a href="/HizliSatis/Ozellikler">Dokunmatik Ekran Özelliği</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Features Section -->
+    <!-- ======= Details Section ======= -->
+    <section id="details" class="details">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+
+                <p>MODÜLLER</p>
+            </div>
+            <div class="row content">
+                <div class="col-md-4" data-aos="fade-right">
+                    <img src="~/Content/assets/img/gallery/teklifmodüll.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8" data-aos="fade-up">
+                    <h3>Teklif-Sipariş Modülü</h3>
+                    <p class="font-italic">
+                        Bilsoft teklif ve sipariş modülü, ön muhasebe programınıza entegre olarak çalışan bir modüldür.
+                    </p>
+                    <ul>
+                        <li><i class="icofont-check"></i> Modül sayesinde farklı teklifler oluşturabilirsiniz.</li>
+                        <li><i class="icofont-check"></i> Tekliflerinizi kayıt altında tutarak en uygun teklifinizi siparişe döndürebilirsiniz.</li>
+                        <li><i class="icofont-check"></i> Siparişlerinizi de faturalandırabilir ve faturanızı muhasebe programına işleyebilirsiniz.</li>
+                    </ul>
+                    <p class="font-italic">
+                        Modül ücretsiz muhasebe programının içerisinde kurulu olarak gelmektedir.
+                        Fakat kullanabilmek için lisans satın almanız gerekmektedir.
+                    </p>
+                    <div class="text-center text-lg-left">
+                        <a href="/HizliSatis/SiparisVeTeklif" class="btn-get-started scrollto">Ayrıntılar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+                    <img src="~/Content/assets/img/gallery/OtomatikYedeklemeModulu.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8 order-2 order-md-1" data-aos="fade-up">
+                    <h3>Otomatik Yedekleme Modülü</h3>
+                    <p class="font-italic">
+                        Bilsoft Cari Hesap Programı kullanıcılarının istekleri doğrultusunda hazırlanmış olan
+                        bu program sayesinde artık verilerinizin kaybolmasından korkmanıza gerek kalmayacak.
+                    </p>
+                    <ul>
+                        <li><i class="icofont-check"></i> Bilsoft Cari Takip programınızın veritabanının dilediğiniz an, dilediğiniz adrese yedeğini alabilirsiniz.</li>
+                        <li><i class="icofont-check"></i> Düzenli yedek alma özelliğini kullanarak programın sizin belirlediğiniz sıklıkta, belirtmiş oldugunuz adrese yedekler oluşturmasını sağlayabilirsiniz. </li>
+                        <li><i class="icofont-check"></i> Oluşturmuş olduğunuz yedekleri Bilsoft Cari Hesap Programı üzerine geri yükleme özelliği de vardır.</li>
+                    </ul>
+                    <div class="text-center text-lg-left">
+                        <a href="/HizliSatis/OtomatikYedekleme" class="btn-get-started scrollto">Ayrıntılar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-4" data-aos="fade-right">
+                    <img src="~/Content/assets/img/gallery/excelmodül.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8 " data-aos="fade-up">
+                    <h3>Excel Veri Aktarım Modülü</h3>
+                    <p class="font-italic">
+                        Bilsoft Cari Hesap Programı Excel Yedekleme Yardımcısı sayesinde kullanmakta olduğunuz veritabını excel dökümanı halinde dışarı aktarabilir, aynı zamanda elinizdeki uygun formatlı
+                        excel dosyalarını programınızın veritabanına dahil edebilirsiniz.
+                    </p>
+                    <ul>
+                        <li><i class="icofont-check"></i> Bilsoft Cari Hesap programındaki Banka, Cari Gruplar, Cari Kartlar, Stok, Stok Birimleri, Stok Gruplar bilgilerinizi Excel dokümanı halinde yedekleyebilirsiniz.</li>
+                        <li><i class="icofont-check"></i> Elinizde bulunan Excel dokümanlarını hiç zorlanmadan kullanmakta olduğunuz Bilsoft Cari Hesap Programı'na aktarabilirsiniz. </li>
+                    </ul>
+                    <div class="text-center text-lg-left">
+                        <a href="/HizliSatis/ExcelVeriAktarim" class="btn-get-started scrollto">Ayrıntılar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+                    <img src="~/Content/assets/img/gallery/stokmodül.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8 order-2 order-md-1" data-aos="fade-up">
+                    <h3>Stok Sayım Modülü</h3>
+                    <p class="font-italic">
+                        Bilsoft Cari Hesap Programı kullanıcılarının istekleri doğrultusunda hazırlanmış olan bu program sayesinde artık stok sayım işlemi çok kısa sürede ve güvenli olarak yapılabileceksiniz.
+                    </p>
+                    <p>
+                        Bilsoft Stok Sayım programı stoklarınızı kolay ve hızlı bir şekilde saymanız için hazırlanmıştır.
+                    </p>
+                    <ul>
+                        <li><i class="icofont-check"></i> Bilsoft Cari Takip programındaki ürünlerin bilgilerini güncelleyebilir,  </li>
+                        <li><i class="icofont-check"></i> Sayım miktarınızı girebilir ve programda kayıtlı olmayan ürünleride kolayca ekleyip sayım miktarını girebilirsiniz.</li>
+                        <li><i class="icofont-check"></i> Sayım işlemini isterseniz barkod okutarak isterseniz Stok Sayım programındaki ürün tablosundan seçerek hızlı bir şekilde yapabilirsiniz.</li>
+                    </ul>
+                    <div class="text-center text-lg-left">
+                        <a href="/HizliSatis/StokSayim" class="btn-get-started scrollto">Ayrıntılar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row content">
+                <div class="col-md-4" data-aos="fade-right">
+                    <img src="~/Content/assets/img/gallery/stokrisk.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-8 order-2 order-md-1" data-aos="fade-up">
+                    <h3>Stok Risk Limiti Modülü</h3>
+                    <p class="font-italic">
+                        Bilsoft Cari Hesap Programı kullanıcılarının istekleri doğrultusunda hazırlanmış olan bu program sayesinde artık stoklarınıza risk limiti belirtebileceksiniz. Belirli bir sayının altına düşen stoklarınıza risk limiti belirleyerek elinizdeki stoklarınızın takibini daha sağlıklı bir şekilde gerçekleştirebileceksiniz. Bilsoft Stok Risk Limiti Programı riskli ürünleriniz belirlediğiniz sayının altına düştüğü taktirde mail adresinize bildirir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Details Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Hızlı Satış Programı Bilsoft Ön Muhasebe Programına Tam Entegre Olarak Çalışır</h2>
+                <p>BİLSOFT ÖN MUHASEBE PROGRAMI ÖZELLİKLERİ</p>
+            </div>
+            @*<div class="section-title" data-aos="fade-up">
+                    <p>BİLSOFT ÖN MUHASEBE PROGRAMI ÖZELLİKLERİ</p>
+                    <h2>Hızlı Satış Programı Bilsoft Ön Muhasebe Programına Tam Entegre</h2>
+                </div>*@
+            <div class="row">
+                <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/cari-kart.svg" /></div>
+                        <h4 class="title">Cari Kart Modülü</h4>
+                        <ul class="description">
+                            <li>Sınırsız Cari Hesap kartı tanımlama</li>
+                            <li>Cariye Stoklu-Stoksuz Satış</li>
+                            <li>Cariye kasa'dan ödeme ve tahsilat yapabilme</li>
+                            <li>Cariyi borçlandırma ve alacaklandırma işlemleri</li>
+                            <li>Tahsilat ve ödeme makbuzu kesme</li>
+                            <li>Cari hesap ekstresi, Toplu Cari raporu ve cari işlem raporu alabilme</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="box">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/fatura-takip.svg" /></div>
+                        <h4 class="title">Fatura Modülü</h4>
+                        <ul class="description">
+                            <li>Alış, Satış ve İade faturası düzenleme</li>
+                            <li>Hızlı parekende satışı yapabilme</li>
+                            <li>Standart ve gramajlı ürün barkod desteği</li>
+                            <li>İrsaliyeyi fatura dönüştürme</li>
+                            <li>Fatura makbuz basımı</li>
+                            <li>Detaylı alış, satış ve iade faturası raporlama</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="box">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/raporlama.svg" /></div>
+                        <h4 class="title">Raporlama Sistemi</h4>
+                        <ul class="description">
+                            <li>Cari kartlara ait Hesap ekstresi, Toplu cari raporu v.b.</li>
+                            <li>Stok, Depo Hareketleri, Stok listeleri raporu v.b.</li>
+                            <li>Satış raporu ve satış grafiği</li>
+                            <li>Kasa Hareketleri Raporu</li>
+                            <li>Banka Hareketleri Raporu</li>
+                            <li>Çek/Senet raporu</li>
+                            <li>Kar-Zarar Analizi</li>
+                            <li>Gün Sonu Raporu</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/taksit-takip.svg" /></div>
+                        <h4 class="title">Taksit Takip Modülü</h4>
+                        <ul class="description">
+                            <li>Otomatik taksitlendirme Modülü</li>
+                            <li>Vadesi gelen taksitleri ana ekranda uyarma</li>
+                            <li>Taksitlerin tahsilat ve ödeme işlemleri</li>
+                            <li>Detaylı taksit raporu alabilme</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class=" box">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/banka-takip.svg" /></div>
+                        <h4 class="title">Banka Takip Modülü</h4>
+                        <ul class="description">
+                            <li>Sınırsız banka hesabı tanımlama</li>
+                            <li>Banka hareket girişi yapabilm</li>
+                            <li>Banka'dan Bankaya veya Banka'dan Kasaya virman yapabilme</li>
+                            <li>Banka hareketlerini detaylı raporlama</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="box">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/stok-takip.svg" /> </div>
+                        <h4 class="title">Stok Takibi Modülü</h4>
+                        <ul class="description">
+                            <li>Sınısız Depo tanımlama</li>
+                            <li>Sınırsız Stok Kartı tanımlama</li>
+                            <li>Stok grubu ve birimi tanımlama</li>
+                            <li>Toplu stok raporu ve stok hareketleri raporunu alabilme</li>
+                            <li>Barkodsuz ürünler için otomatik barkod tanımlama</li>
+                            <li>Depo hareketleri raporunu alabilme</li>
+                            <li>Depolar arası virman</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/kasa-takip.svg" /></div>
+                        <h4 class="title">Kasa Takip Modülü</h4>
+                        <ul class="description">
+                            <li>Kasadan ödeme ve tahsilat işlemleri</li>
+                            <li>Kasadaki kalan bakiyeyi görme</li>
+                            <li>Kasa'dan banka'ya virman yapabilme</li>
+                            <li>İki tarih arası detaylı raporlama</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="box">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/cek-senet-takip.svg" /></div>
+                        <h4 class="title">Çek-Senet takibi</h4>
+                        <ul class="description">
+                            <li>Sınırsız çek-senet tanımlama</li>
+                            <li>Çeklerin ödeme/tahsilat durumunu değiştirme</li>
+                            <li>İki tarih arasında detaylı raporlama</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="box">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/kullanici-arayuzu.svg" /></div>
+                        <h4 class="title">Kullanıcı Arayüzü</h4>
+                        <ul class="description">
+                            <li>Birden çok bilgisayardan erişim</li>
+                            <li>Firma bilgi tanımlama  </li>
+                            <li>Şube Tanımlama</li>
+                            <li>İnternetin olduğu her yerde mekandan bağımsız başlanabilme</li>
+                            <li>Her kullanıcıyı yetkilendirme (Ekleme,Düzenleme,Silme Raporlama işlemlerine göre)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="kart-1">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/hizli-satis.svg" /></div>
+                        <h4 class="title">Hızlı Satış Paneli</h4>
+                        <ul class="description">
+                            <li>Ön Muhasebe Programıyla tam entegrasyon çalışma</li>
+                            <li>Tek Butonla Nakit Satış</li>
+                            <li>Tek Butonla Kredi Kartı Satışı</li>
+                            <li>Çoklu Ödeme (Hem Nakit Hem Kredi Kartı)</li>
+                            <li>Müşteri Bekletme (Birden fazla Müşteriye Satış)</li>
+                            <li>Kolay Para girişi (Dokunmatik Ekran) </li>
+                            <li>Terazi Barkod Okuyucu İşlemi</li>
+                            <li>Para Çekmecesi Bağlantısı</li>
+                            <li>Yazarkasa Pos </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="kart-2">
+                        <div><img id="muhasebeOzellik" width="60" src="~/Content/assets/img/icon/diger.svg" /></div>
+                        <h4 class="title">Diğer Özellikler</h4>
+                        <ul class="description">
+                            <li>Hızlı fiyat sorgulama ekranı</li>
+                            <li>Hızlı günlük satış analizi</li>
+                            <li>Vadesi gelen veya geçen taksit hatırlatma</li>
+                            <li>Çoklu Ödeme (Hem Nakit Hem Kredi Kartı)</li>
+                            <li>Fatura ve rapor dizaynını kullanıcının kendi yapabilmesi </li>
+                            <li>Otomatik güncelleme</li>
+                            <li>Fiyatlandırmaya yeni ek modüller dahil değildir.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- End Services Section -->
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                @*<h2>Kampanyalar</h2>*@
+                <p>KAMPANYALARIMIZ</p>
+            </div>
+
+            <div class="row" data-aos="fade-left">
+                <div class="col-lg-3 col-md-6">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                        @*<h3>Hızlı Satış Programı</h3>
+                            <h4><sup>₺</sup>0<span> / month</span></h4>
+                            <ul>
+                                <li>Tek Butonla Nakit Satış</li>
+                                <li>Tek Butonla Kredi Kartı Satışı</li>
+                                <li>Çoklu Ödeme</li>
+                                <li>Müşteri Bekletme </li>
+                                <li>Kolay Para girişi</li>
+                                <li>Terazi Barkod Okuyucu İşlemi</li>
+                                <li>Para Çekmecesi Bağlantısı</li>
+                                <li>Yazarkasa Pos </li>
+                                <li class="na">Ömür Boyu Lisans</li>
+                                <li class="na">Barkod Listesi</li>
+                                <li class="na">Personel Takip</li>
+                                <li class="na">e-Tahsilat</li>
+                                <li class="na">Faturada Döviz İşlemi</li>
+                                <li class="na">Vade Takip</li>
+                                <li class="na">Ajanda</li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Satın Al</a>
+                            </div>*@
+                        <img style="width:17em;" class="img-fluid" src="~/Content/assets/img/Asset 24.png" />
+
+                    </div>
+
+                    <div class="btn-wrap">
+                        <a href="#" class="btn-buy">Satın Al</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="400">
+                        @*<span class="advanced">VIP Tek.Des.</span>
+                            <h3>3 Yıl <b>Online</b></h3>
+                            <h4><sup>₺</sup>1.550 / <span>1950₺</span></h4>
+                            <ul>
+                                <li class="under">"3 Yıl Kullanım Süresi"</li>
+                                <li>e-Fatura</li>
+                                <li>Sınırsız Şube ve Depo</li>
+                                <li>Faturada Döviz İşlemi</li>
+                                <li>Hızlı Satış Programı</li>
+                                <li>Teklif Sipariş Programı</li>
+                                <li>e-Tahsilat</li>
+                                <li>Otomatik Yedekleme</li>
+                                <li>Ecxel Veri Aktarımı</li>
+                                <li>Stok Sayım</li>
+                                <li>Stok Risk Limiti</li>
+                                <li>Personel Takip</li>
+                                <li>n11.com e-Ticaret Programı</li>
+                                <li>Vade Takip</li>
+                                <li>Ajanda</li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Satın Al</a>
+                            </div>*@
+
+                        <img style="width:17em;" class="img-fluid" src="~/Content/assets/img/Asset 25.png" />
+
+                    </div>
+
+                    <div class="btn-wrap">
+                        <a href="#" class="btn-buy">Satın Al</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="300">
+
+                        @*<span class="advanced">VIP Tek.Des.</span>
+                            <h3>Premium Mega</h3>
+                            <h4><sup>₺</sup>3.250 / <span>6150₺</span></h4>
+                            <ul>
+                                <li class="under">"Ömür Boyu Lisans"</li>
+                                <li>e-Fatura</li>
+                                <li>Hızlı Satış Programı</li>
+                                <li>Otomatik Yedekleme</li>
+                                <li>e-Tahsilat</li>
+                                <li>Barkod Listesi</li>
+                                <li>Teklif Sipariş Programı</li>
+                                <li>Excel Veri Aktarımı</li>
+                                <li>Stok Sayım</li>
+                                <li>Stok Risk Limiti</li>
+                                <li>Personel Takip</li>
+                                <li>Faturada Döviz İşlemi</li>
+                                <li>n11.com e-Ticaret Programı</li>
+                                <li>Vade Takip</li>
+                                <li>Ajanda</li>
+                            </ul>
+
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Satın Al</a>
+                            </div>*@
+                        <img style="width:17em;" class="img-fluid" src="~/Content/assets/img/Asset 26.png" />
+
+                    </div>
+
+                    <div class="btn-wrap">
+                        <a href="#" class="btn-buy">Satın Al</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                    <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                        @*<span class="advanced">Std Tek.Des.</span>
+                            <h3>Premium <b>Plus</b></h3>
+                            <h4><sup>₺</sup>2.400 / <span>4000₺</span></h4>
+                            <ul>
+                                <li class="under">"Ömür Boyu Lisans"</li>
+                                <li>Otomatik Yedekleme</li>
+                                <li>e-Tahsilat</li>
+                                <li>Barkod Listesi</li>
+                                <li>Hızlı Satış Programı</li>
+                                <li>Ecxel Veri Aktarımı</li>
+                                <li>Stok Sayım</li>
+                                <li>Stok Risk Limiti</li>
+                                <li>Vade Takip</li>
+                                <li>Ajanda</li>
+                                <li class="na">e-Fatura</li>
+                                <li class="na">Personel Takip</li>
+                                <li class="na">Faturada Döviz İşlemi</li>
+                                <li class="na">n11.com e-Ticaret Programı</li>
+                                <li class="na">Teklif Sipariş Programı</li>
+                            </ul>
+
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Satın Al</a>
+                            </div>*@
+                        <img style="width:17em;" class="img-fluid" src="~/Content/assets/img/Asset 27.png" />
+
+                    </div>
+
+
+                    <div class="btn-wrap">
+                        <a href="#" class="btn-buy">Satın Al</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section><!-- End Pricing Section -->
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>S.S.S</h2>
+                <p>Sıkça Sorulan Sorular</p>
+            </div>
+
+            <div class="faq-list">
+                <ul>
+                    <li data-aos="fade-up">
+                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapsed" href="#faq-list-1">Bilsoft Premium Ön Muhasebe Programı’na aylık veya yıllık olarak ödeme gerektirir mi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-1" class="collapse" data-parent=".faq-list">
+                            <p>
+                                Sadece tek sefer ücret ödenir. Ömür boyu lisanslı bir şekilde kullanıma devam edilir.
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Bilgisayarıma format attıktan sonra Bilsoft Premium Ön Muhasebe Programı kurulumu için ücret ödeyecek miyim? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                            <p>
+                                Bilsoft Premium Ön Muhasebe Programı’na sadece bir defa ücret ödenir. Ek kullanım ücreti alınmaz.
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Bilsoft Premium Ön Muhasebe Programı’nı kaç bilgisayara kurabilirim?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                            <p>
+                                Bilsoft Premium Ön Muhasebe Programı’nı sadece bir bilgisayara kurabilirsiniz. Ağ üzerinden birden fazla bilgisayara kurulum için ek lisans gerekir.
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="300">
+                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Bilsoft Premium Ön Muhasebe Programı’nın en son güncellemesi geldiğinde ücret ödeyecek miyim?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                            <p>
+                                Bilsoft Premium Ön Muhasebe Programı içerisinden güncelleme yaptığınız takdirde otomatik olarak yapılır. Ek bir ücret ödemezsiniz.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Bilsoft Premium Ön Muhasebe Programı’nın devir işlem ücreti var mıdır?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                            <p>
+                                Bilsoft Premium Ön Muhasebe Programı’nın satın alınan ilk yılı için devir işlemi ücretsiz olarak yapılır. Diğer yıllar ek bir ücret talep edilir.
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-6" class="collapsed">Bilsoft Premium Ön Muhasebe Programı Online sisteme aktarılabilir mi?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-6" class="collapse" data-parent=".faq-list">
+                            <p>
+                                Bilsoft Premium Ön Muhasebe Programı’nın Online sisteme aktarım işlemi sağlanır. Ancak aktarım yapılırken ek modüller Online sisteme dahil edilmez.
+                            </p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-7" class="collapsed">Bilsoft Premium Ön Muhasebe Programı’nın teknik destek ücreti var mıdır?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-7" class="collapse" data-parent=".faq-list">
+                            <p>
+                                Programda kullanıcıdan kaynaklı sorunlarda teknik destek ücreti talep edilir. Programsal sorunlarda teknik destek ücreti alınmaz.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section><!-- End F.A.Q Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <p>İletişim</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                    <div class="info">
+                        <div class="address">
+                            <i class="icofont-google-map"></i>
+                            <h4>Adres:</h4>
+                            <p>Düzce Üniversitesi Teknopark - Orhangazi Mah Teknopark Cad. No:1 Kat:2, 81100 Merkez/Düzce</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="icofont-envelope"></i>
+                            <h4>Email:</h4>
+                            <p>bilgi@bilsoft.com</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="icofont-phone"></i>
+                            <h4>Telefon:</h4>
+                            <p>(0212) 912 24 26</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="form-row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Ad" data-rule="minlen:4" data-msg="En az 4 karakter yazın" />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Lütfen email adresinizi yazın" />
+                                <div class="validate"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" data-rule="minlen:4" data-msg="En az 8 karakter yazın" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="2" data-rule="required" placeholder="Mesaj"></textarea>
+                            <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="loading">Yükleniyor</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Mesajınız başarıyla gönderildi!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Gönder</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Contact Section -->
+</main><!-- End #main -->
