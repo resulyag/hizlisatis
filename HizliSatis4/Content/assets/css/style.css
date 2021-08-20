@@ -1289,22 +1289,45 @@ section {
 }
 
 .pricing .btn-buy {
-    background: #1acc8d;
+    background: #004b89;
     display: inline-block;
-    padding: 8px 35px 10px 35px;
-    border-radius: 50px;
+    padding: 6px 17px 7px 17px;
+    border-radius: 40px;
     color: #fff;
     transition: none;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: "Nunito", sans-serif;
     transition: 0.3s;
     box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
+    position: relative;
+    bottom:80px;
+    left:80px;
 }
 
+
     .pricing .btn-buy:hover {
-        background: #149f6e;
+        background: #023c6b;
+    }
+
+.pricing .btn-demo {
+    background: #f48220;
+    display: inline-block;
+    padding: 6px 17px 7px 17px;
+    border-radius: 40px;
+    color: #fff;
+    transition: none;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: "Nunito", sans-serif;
+    transition: 0.3s;
+    box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
+    position: relative;
+    bottom: 80px;
+    right: 83px;
+}
+    .pricing .btn-demo:hover {
+        background: #d47626;
     }
 
 .pricing .featured h3 {
