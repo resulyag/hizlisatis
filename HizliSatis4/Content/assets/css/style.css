@@ -446,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     #hero .btn-get-started {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Nunito", sans-serif;
         font-weight: 500;
         font-size: 16px;
         letter-spacing: 1px;
@@ -455,12 +455,27 @@ h1, h2, h3, h4, h5, h6 {
         border-radius: 50px;
         transition: 0.5s;
         color: #fff;
-        background: #1bb1dc;
+        background: #004b89;
+        border: 2px solid #004b89;
     }
 
         #hero .btn-get-started:hover {
             background: #17b57d;
         }
+    #hero .demo {
+        font-family: "Nunito", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 50px;
+        transition: 0.5s;
+        color: #fff;
+        background: #3a9eba;
+        margin-left: 10px;
+        border: 2px solid #004b89;
+    }
 
     #hero .animated {
         animation: up-down 2s ease-in-out infinite alternate-reverse both;
