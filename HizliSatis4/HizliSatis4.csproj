@@ -246,6 +246,7 @@
     <Content Include="Views\HizliSatis\StokRiskLimiti.cshtml" />
     <Content Include="Views\HizliSatis\Ozellikler.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\HizliSatis\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
